@@ -1,6 +1,6 @@
-var cookie = 0;
+let cookie = 0;
 function addCookie(){
-     cookie = cookie + 1;
+     cookie += 1;
   document.getElementById("cookies").innerHTML = cookie;
 };  
 function save(){
