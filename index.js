@@ -6,4 +6,7 @@ function addCookie(){
 function save(){
   localStorage.setItem("cookies", cookie);
 };
-document.getElementById("result").innerHTML = localStorage.lastname;
+function load(){
+cookie = localStorage.cookies;
+document.getElementById("cookies").innerHTML = cookie;
+};
