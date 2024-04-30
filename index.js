@@ -7,6 +7,6 @@ function save(){
   localStorage.setItem("cookies", cookie);
 };
 function load(){
-cookie = Number(localStorage.cookies);
+let cookie = Number(localStorage.cookies);
 document.getElementById("cookies").innerHTML = cookie;
 };
