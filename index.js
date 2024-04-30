@@ -7,6 +7,7 @@ function addCookie(){
 };  
 function save(){
   localStorage.setItem("cookies", cookie);
+     alert("Saved your ", cookie, " cookies");
 };
 function load(){
 let cookie = localStorage.cookies;
