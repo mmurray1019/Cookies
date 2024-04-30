@@ -1,5 +1,5 @@
 let cookie = 0;
-document.getElementById("cookies").innerHTML = cookie;
+
 function addCookie(){
      cookie += 1;
   document.getElementById("cookies").innerHTML = cookie;
