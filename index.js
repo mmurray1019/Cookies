@@ -7,6 +7,6 @@ function save(){
   localStorage.setItem("cookies", cookie);
 };
 function load(){
-cookie = localStorage.cookies;
+let cookie = localStorage.cookies;
 document.getElementById("cookies").innerHTML = cookie;
 };
