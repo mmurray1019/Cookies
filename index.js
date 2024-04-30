@@ -1,6 +1,6 @@
 let cookie = 0;
 function addCookie(){
-     cookie += number(1);
+     cookie += 1;
   document.getElementById("cookies").innerHTML = cookie;
 };  
 function save(){
