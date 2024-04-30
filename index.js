@@ -1,4 +1,4 @@
-let cookie = 0;
+let cookie = 00;
 let cookie = localStorage.cookies;
 document.getElementById("cookies").innerHTML = cookie;
 function addCookie(){
