@@ -1,5 +1,3 @@
-
-
 let cookie = 0;
 function addCookie(){
      cookie += 1;
