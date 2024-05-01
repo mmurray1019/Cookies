@@ -15,6 +15,4 @@ var savegame = JSON.parse(localStorage.getItem("save"));
 document.getElementById("cookies").innerHTML = cookies;
 };
 
-function cookie_click() {
-  localStorage.setItem('cookies', cookies);
-}
+
