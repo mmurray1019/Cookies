@@ -1,22 +1,20 @@
-let cookie = 0;
+let cookies = 0;
 function addCookie(){
-     cookie += 1;
-  document.getElementById("cookies").innerHTML = cookie;
+     cookies += 1;
+  document.getElementById("cookies").innerHTML = cookies;
 };  
 function save(){
-  localStorage.setItem("cookies", cookie);
+  var save = {
+       cookies:cookies
+  }
+     localStorage.setItem("save",JSON.stringify(save));
 };
 function load(){
-let cookie = Number(localStorage.cookies);
-document.getElementById("cookies").innerHTML = cookie;
+var savegame = JSON.parse(localStorage.getItem("save"));
+     if (typeof savegame.cookies !== "undefined") cookies = savegame.cookies;
+document.getElementById("cookies").innerHTML = cookies;
 };
 
-//if (localStorage.getItem('cookies') == null) {
-  cookies_clicked = 0;
-} else {
-  cookie = localStorage.getItem('cookies');
-}
-
 function cookie_click() {
-  localStorage.setItem('cookies', cookie);
+  localStorage.setItem('cookies', cookies);
 }
