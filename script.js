@@ -19,11 +19,11 @@ function login(){
         alert("sign up you idiot");
     } else {
     if (ImputtedEmail == getInfo.trueEmail && ImputtedPassword == getInfo.truePassword) {
-        //redirect code here
+        window.location.href = "http://www.w3schools.com";
         alert("sucess");
       } else {
         alert("Incorrect Password or Username");
-        return false;
+        window.location.href = "http://github.com";
       }
     }
 
@@ -41,8 +41,10 @@ var LoginInfo = {
     truePassword:SignupPassword
 };
   localStorage.setItem("LoginInfo",JSON.stringify(LoginInfo));
+        window.location.href = "https://start.oldtrail.org/";
 } 
 } else {
     alert("You are already signed up.");
+        window.location.href = "https://oldtrail.myschoolapp.com/app/student#studentmyday/assignment-center";
 }
 }
