@@ -15,7 +15,7 @@ function login(){
     var ImputtedPassword = document.getElementById('password').value
     var getInfo = JSON.parse(localStorage.getItem("LoginInfo"));
     
-    if (getInfo.trueEmail===null || getInfo.truePassword===null) {
+    if (getInfo.trueEmail == null || getInfo.truePassword == null) {
         alert("sign up you idiot");
     } else {
     if (ImputtedEmail == getInfo.trueEmail && ImputtedPassword == getInfo.truePassword) {
