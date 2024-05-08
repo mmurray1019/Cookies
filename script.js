@@ -17,13 +17,15 @@ function login(){
     
     if (getInfo.trueEmail == null || getInfo.truePassword == null) {
         alert("sign up you idiot");
+        console.log('must sign up');
     } else {
     if (ImputtedEmail == getInfo.trueEmail && ImputtedPassword == getInfo.truePassword) {
         window.location.href = "http://www.w3schools.com";
         alert("sucess");
+        console.log('yay');
       } else {
         alert("Incorrect Password or Username");
-        window.location.href = "http://github.com";
+        console.log('incorrecty');
       }
     }
 
@@ -41,10 +43,11 @@ var LoginInfo = {
     truePassword:SignupPassword
 };
   localStorage.setItem("LoginInfo",JSON.stringify(LoginInfo));
-        window.location.href = "https://start.oldtrail.org/";
+        console.log('singed_up_sucesful');
+       
 } 
 } else {
     alert("You are already signed up.");
-        window.location.href = "https://oldtrail.myschoolapp.com/app/student#studentmyday/assignment-center";
+      console.log('already_singed_up');
 }
 }
