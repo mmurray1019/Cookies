@@ -15,7 +15,9 @@ function login(){
     var ImputtedPassword = document.getElementById('password').value
     var getInfo = JSON.parse(localStorage.getItem("LoginInfo"));
     
-    
+    if (getInfo.trueEmail == null || getIngo.truePassword == null) {
+        alert("sign up you idiot");
+    } else {
     if (ImputtedEmail == getInfo.trueEmail && ImputtedPassword == getInfo.truePassword) {
         //redirect code here
         alert("sucess");
@@ -23,6 +25,7 @@ function login(){
         alert("Incorrect Password or Username");
         return false;
       }
+    }
 
 }
 //
